@@ -4,8 +4,8 @@ server:
   contextPath: /SpringBootCRUDApp
 ---
 spring:
-  profiles: prod
-  active: prod
+  profiles: default
+  active: default
 datasource:
   sampleapp:
     url: jdbc:h2:~/test
@@ -21,8 +21,8 @@ datasource:
       dialect: org.hibernate.dialect.H2Dialect
 ---
 spring:
-  profiles: default
-  active: default
+  profiles: prod
+  active: prod
 datasource:
   sampleapp:
     url: jdbc:mysql://localhost:3306/websystique
